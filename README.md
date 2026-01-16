@@ -19,3 +19,14 @@ The data consist of 3 classes:
 - Rock
 - Paper
 - Scissors
+
+## How to run it ?
+To run the model fine tuning, use the command below
+```bash
+python train.py 
+```
+
+To run object detection on live webcam, use this command:
+```bash
+yolo detect predict model=trained_model/best.pt source=0 show=True
+```
